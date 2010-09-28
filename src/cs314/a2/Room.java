@@ -28,7 +28,7 @@ public class Room implements CaveSite {
 
   private ArrayList<Item> contents = new ArrayList<Item>();
 
-  Room() {
+  public Room() {
     side[0] = new Wall();
     side[1] = new Wall();
     side[2] = new Wall();
