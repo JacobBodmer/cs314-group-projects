@@ -1,5 +1,5 @@
 package cs314.a2;
-
+//Making an edit to test commits.
 
 /**  Cave Game  Program Code
      Copyright (c) 1999 James M. Bieman
