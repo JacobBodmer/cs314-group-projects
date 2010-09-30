@@ -1,4 +1,4 @@
-package cs314.a2;
+package cs314.a3.src;
 
 public class CaveGameModelFacade {
 

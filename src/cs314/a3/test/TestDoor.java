@@ -3,13 +3,19 @@ TestDoor.java
 TODO: description of file
 Author: M. Bostwick, Sep 30, 2010
  */
-package cs314.a2;
+package cs314.a3.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import cs314.a3.src.Door;
+import cs314.a3.src.Key;
+import cs314.a3.src.Player;
+import cs314.a3.src.Room;
+import cs314.a3.src.Wall;
 
 /**
  * @author myles
@@ -32,7 +38,7 @@ public class TestDoor {
 	}
 
 	/**
-	 * Test method for {@link cs314.a2.Door#enter(cs314.a2.Player)}.
+	 * Test method for {@link cs314.a3.src.Door#enter(cs314.a3.src.Player)}.
 	 */
 	@Test
 	public void testTwoRoomEnter() {
@@ -57,7 +63,7 @@ public class TestDoor {
 	}
 
 	/**
-	 * Test method for {@link cs314.a2.Door#enter(cs314.a2.Player)}.
+	 * Test method for {@link cs314.a3.src.Door#enter(cs314.a3.src.Player)}.
 	 */
 	@Test
 	public void testTwoRoomWithPassageToEachSide() {
@@ -89,7 +95,7 @@ public class TestDoor {
 	}
 	
 	/**
-	 * Test method for {@link cs314.a2.Door#enter(cs314.a2.Player)}.
+	 * Test method for {@link cs314.a3.src.Door#enter(cs314.a3.src.Player)}.
 	 */
 	@Test(expected=NullPointerException.class)
 	public void testDoorWithNullRoom() {
@@ -116,7 +122,7 @@ public class TestDoor {
 	}
 	
 	/**
-	 * Test method for {@link cs314.a2.Door#enter(cs314.a2.Player)}.
+	 * Test method for {@link cs314.a3.src.Door#enter(cs314.a3.src.Player)}.
 	 */
 	@Test
 	public void testDoorWithRecursiveRoom() {
@@ -140,7 +146,7 @@ public class TestDoor {
 	}
 	
 	/**
-	 * Test method for {@link cs314.a2.Door#enter(cs314.a2.Player)}.
+	 * Test method for {@link cs314.a3.src.Door#enter(cs314.a3.src.Player)}.
 	 */
 	@Test
 	public void testDoorWithWallsAsSites() {
@@ -166,7 +172,7 @@ public class TestDoor {
 	}
 	
 	/**
-	 * Test method for {@link cs314.a2.Door#enter(cs314.a2.Player)}.
+	 * Test method for {@link cs314.a3.src.Door#enter(cs314.a3.src.Player)}.
 	 */
 	@Test
 	public void testDoorWithWrongKeys() {
